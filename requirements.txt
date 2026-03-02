@@ -1,5 +1,12 @@
+import streamlit as st
+from arabic_reshaper import reshape
+from bidi.algorithm import get_display
+
+def fix_text(text):
+    return get_display(reshape(text)
 streamlit
 pandas
 arabic-reshaper
 python-bidi
 openpyxl
+
