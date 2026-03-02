@@ -16,7 +16,7 @@ st.title(fix_ar("نتائج متوسطة ابن خلدون للبنين"))
 
 try:
     # قراءة ملف الإكسل
-    df = pd.read_excel("Final_School_System.db")
+    df = pd.read_excel("Final_School_System.xlsx")
     
     # خانة البحث
     search = st.text_input(fix_ar("أدخل اسم الطالب أو رقم الجلوس:"))
@@ -35,3 +35,4 @@ try:
             st.error(fix_ar("عذراً، لم يتم العثور على نتيجة"))
 except Exception as e:
     st.error(fix_ar("تأكد من رفع ملف قاعدة البيانات بشكل صحيح"))
+
